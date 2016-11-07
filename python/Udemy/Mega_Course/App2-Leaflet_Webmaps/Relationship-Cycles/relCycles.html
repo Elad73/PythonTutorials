@@ -1,0 +1,919 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_45642942d67c49d6915db1abaa071aff {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_45642942d67c49d6915db1abaa071aff" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_45642942d67c49d6915db1abaa071aff = L.map('map_45642942d67c49d6915db1abaa071aff', {
+                                           center:[32.128302,34.792693],
+                                           zoom: 15,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_9d8352f03ae84087be31db2cc3b718d9 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+
+        
+        
+            
+
+            var marker_38a20fea1fa249538f01c2b142bdc060 = L.marker(
+                [32.128302,34.792693],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_45642942d67c49d6915db1abaa071aff);
+            
+        
+            
+
+                var icon_7dfd0895a303460abe2147985b32067b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38a20fea1fa249538f01c2b142bdc060.setIcon(icon_7dfd0895a303460abe2147985b32067b);
+            
+        
+            
+            var popup_1522f73a81134b2b86f171b113111e70 = L.popup({maxWidth: '300'});
+
+            
+                var html_35d439d20caa496791839dea9aec62ab = $('         <div id="html_35d439d20caa496791839dea9aec62ab"                 style="width: 100.0%; height: 100.0%;">                 Home</div>                 ')[0];
+                popup_1522f73a81134b2b86f171b113111e70.setContent(html_35d439d20caa496791839dea9aec62ab);
+            
+
+            marker_38a20fea1fa249538f01c2b142bdc060.bindPopup(popup_1522f73a81134b2b86f171b113111e70);
+
+            
+        
+        
+            
+            var feature_group_1a81f0d4401a47849441222ea82fa3db = L.featureGroup(
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+        
+        
+            
+
+            var marker_eb88237682124175ba8e2f6bf7ad5ff2 = L.marker(
+                [32.146087,34.983676],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1a81f0d4401a47849441222ea82fa3db);
+            
+        
+            
+
+                var icon_a2505f6016f740fc8955a3ab342cb6ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eb88237682124175ba8e2f6bf7ad5ff2.setIcon(icon_a2505f6016f740fc8955a3ab342cb6ff);
+            
+        
+            
+            var popup_5982f2a5de2041058e14d7772d0a7cc6 = L.popup({maxWidth: '300'});
+
+            
+                var html_e071fb098c004380a533296e6deecb50 = $('         <div id="html_e071fb098c004380a533296e6deecb50"                 style="width: 100.0%; height: 100.0%;">                  Savata Ita</div>                 ')[0];
+                popup_5982f2a5de2041058e14d7772d0a7cc6.setContent(html_e071fb098c004380a533296e6deecb50);
+            
+
+            marker_eb88237682124175ba8e2f6bf7ad5ff2.bindPopup(popup_5982f2a5de2041058e14d7772d0a7cc6);
+
+            
+        
+        
+            
+
+            var marker_5683831527e145a4a247c722bd291f02 = L.marker(
+                [32.703002,35.164252],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1a81f0d4401a47849441222ea82fa3db);
+            
+        
+            
+
+                var icon_11602dd03f284aa7b453186fd17c5b87 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5683831527e145a4a247c722bd291f02.setIcon(icon_11602dd03f284aa7b453186fd17c5b87);
+            
+        
+            
+            var popup_c7996331b9504bae86cd93d726f983cd = L.popup({maxWidth: '300'});
+
+            
+                var html_2c15c94ada9d408e8cc9e982d2bd95f4 = $('         <div id="html_2c15c94ada9d408e8cc9e982d2bd95f4"                 style="width: 100.0%; height: 100.0%;">                  Saba Yehuda &amp; Nurit</div>                 ')[0];
+                popup_c7996331b9504bae86cd93d726f983cd.setContent(html_2c15c94ada9d408e8cc9e982d2bd95f4);
+            
+
+            marker_5683831527e145a4a247c722bd291f02.bindPopup(popup_c7996331b9504bae86cd93d726f983cd);
+
+            
+        
+        
+            
+
+            var marker_88e64974bc394fdca64b6a8603a03164 = L.marker(
+                [31.679973,34.563714],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1a81f0d4401a47849441222ea82fa3db);
+            
+        
+            
+
+                var icon_87b7d8aac81d41f7b1ced735d7f7df38 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88e64974bc394fdca64b6a8603a03164.setIcon(icon_87b7d8aac81d41f7b1ced735d7f7df38);
+            
+        
+            
+            var popup_4917df67015e4e80a8725555ac5e3529 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba397b01e3804464af2a6c253fb6ac7d = $('         <div id="html_ba397b01e3804464af2a6c253fb6ac7d"                 style="width: 100.0%; height: 100.0%;">                  Saba Ezra</div>                 ')[0];
+                popup_4917df67015e4e80a8725555ac5e3529.setContent(html_ba397b01e3804464af2a6c253fb6ac7d);
+            
+
+            marker_88e64974bc394fdca64b6a8603a03164.bindPopup(popup_4917df67015e4e80a8725555ac5e3529);
+
+            
+        
+        
+            
+
+            var marker_213e63f10f64438ebb7f089b8b43bc27 = L.marker(
+                [32.101892,34.784878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1a81f0d4401a47849441222ea82fa3db);
+            
+        
+            
+
+                var icon_bb99c0b7432e4808b3a1e55685bd3049 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_213e63f10f64438ebb7f089b8b43bc27.setIcon(icon_bb99c0b7432e4808b3a1e55685bd3049);
+            
+        
+            
+            var popup_98d2f6753034466fb7cf84f0625b3b60 = L.popup({maxWidth: '300'});
+
+            
+                var html_0cf065b3f17d4960ad5e33d7ff106688 = $('         <div id="html_0cf065b3f17d4960ad5e33d7ff106688"                 style="width: 100.0%; height: 100.0%;">                  Savta Geula</div>                 ')[0];
+                popup_98d2f6753034466fb7cf84f0625b3b60.setContent(html_0cf065b3f17d4960ad5e33d7ff106688);
+            
+
+            marker_213e63f10f64438ebb7f089b8b43bc27.bindPopup(popup_98d2f6753034466fb7cf84f0625b3b60);
+
+            
+        
+        
+            
+            var feature_group_5ba0089069a04c92b20707fb4b12aa5f = L.featureGroup(
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+        
+        
+            
+
+            var marker_3dc8843f4d8a4a36bd4a6d5179bb1e59 = L.marker(
+                [32.14619,34.983676],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_8e6b48a1fca74b01b39556a5314d19d8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3dc8843f4d8a4a36bd4a6d5179bb1e59.setIcon(icon_8e6b48a1fca74b01b39556a5314d19d8);
+            
+        
+            
+            var popup_b4fce0b2f9894acc9b6e5b525a967b6a = L.popup({maxWidth: '300'});
+
+            
+                var html_f394c9fae8064b3689867d1d82c663d6 = $('         <div id="html_f394c9fae8064b3689867d1d82c663d6"                 style="width: 100.0%; height: 100.0%;">                  Askal &amp; Ayelet</div>                 ')[0];
+                popup_b4fce0b2f9894acc9b6e5b525a967b6a.setContent(html_f394c9fae8064b3689867d1d82c663d6);
+            
+
+            marker_3dc8843f4d8a4a36bd4a6d5179bb1e59.bindPopup(popup_b4fce0b2f9894acc9b6e5b525a967b6a);
+
+            
+        
+        
+            
+
+            var marker_d2f50e790040429fb4781e60be16c723 = L.marker(
+                [32.076086,34.777575],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_e9a8cee9dc434a16845dbf98f857552d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d2f50e790040429fb4781e60be16c723.setIcon(icon_e9a8cee9dc434a16845dbf98f857552d);
+            
+        
+            
+            var popup_42695aae28f54f6b8e3dee039455a5c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_21817e2301fd4dfd826d15458ee514f8 = $('         <div id="html_21817e2301fd4dfd826d15458ee514f8"                 style="width: 100.0%; height: 100.0%;">                  Orki &amp; Shannon</div>                 ')[0];
+                popup_42695aae28f54f6b8e3dee039455a5c7.setContent(html_21817e2301fd4dfd826d15458ee514f8);
+            
+
+            marker_d2f50e790040429fb4781e60be16c723.bindPopup(popup_42695aae28f54f6b8e3dee039455a5c7);
+
+            
+        
+        
+            
+
+            var marker_9e79430dd4654fddb990988224a19240 = L.marker(
+                [32.123077,34.840857],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_4f2f8cf396b5449183581400d15281ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9e79430dd4654fddb990988224a19240.setIcon(icon_4f2f8cf396b5449183581400d15281ac);
+            
+        
+            
+            var popup_73956e7385974d45a9ee620c1259b882 = L.popup({maxWidth: '300'});
+
+            
+                var html_a80c34fd3f45445f8d977d87a9f2b671 = $('         <div id="html_a80c34fd3f45445f8d977d87a9f2b671"                 style="width: 100.0%; height: 100.0%;">                  Ravit &amp; Itai</div>                 ')[0];
+                popup_73956e7385974d45a9ee620c1259b882.setContent(html_a80c34fd3f45445f8d977d87a9f2b671);
+            
+
+            marker_9e79430dd4654fddb990988224a19240.bindPopup(popup_73956e7385974d45a9ee620c1259b882);
+
+            
+        
+        
+            
+
+            var marker_412556ab1355425c8f9b78286531ac96 = L.marker(
+                [31.822281,34.8195],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_e4bdab3332f544189c830d2a284854eb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_412556ab1355425c8f9b78286531ac96.setIcon(icon_e4bdab3332f544189c830d2a284854eb);
+            
+        
+            
+            var popup_7517e2610ac04660bdb5aaa838a9f089 = L.popup({maxWidth: '300'});
+
+            
+                var html_ef255c014a4d4e6ab2b6fac09b4114c2 = $('         <div id="html_ef255c014a4d4e6ab2b6fac09b4114c2"                 style="width: 100.0%; height: 100.0%;">                  Lilach &amp; Amit</div>                 ')[0];
+                popup_7517e2610ac04660bdb5aaa838a9f089.setContent(html_ef255c014a4d4e6ab2b6fac09b4114c2);
+            
+
+            marker_412556ab1355425c8f9b78286531ac96.bindPopup(popup_7517e2610ac04660bdb5aaa838a9f089);
+
+            
+        
+        
+            
+
+            var marker_f341f09d453a4814b7833b72388e37b1 = L.marker(
+                [32.126843,34.808347],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_ab1251da92e34334b4cec68b7a3e6490 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f341f09d453a4814b7833b72388e37b1.setIcon(icon_ab1251da92e34334b4cec68b7a3e6490);
+            
+        
+            
+            var popup_2f767ceeff7a4816a261a4abb50b06d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_6088605431514ace93dcf5d55f8b1dbf = $('         <div id="html_6088605431514ace93dcf5d55f8b1dbf"                 style="width: 100.0%; height: 100.0%;">                  Eli &amp; Gili</div>                 ')[0];
+                popup_2f767ceeff7a4816a261a4abb50b06d8.setContent(html_6088605431514ace93dcf5d55f8b1dbf);
+            
+
+            marker_f341f09d453a4814b7833b72388e37b1.bindPopup(popup_2f767ceeff7a4816a261a4abb50b06d8);
+
+            
+        
+        
+            
+
+            var marker_bdc1e8a134ef46f3989b1f9db873fb7e = L.marker(
+                [32.093331,34.786979],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_5ba0089069a04c92b20707fb4b12aa5f);
+            
+        
+            
+
+                var icon_99b0d8d1f9774c4da45858a4bea520d2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bdc1e8a134ef46f3989b1f9db873fb7e.setIcon(icon_99b0d8d1f9774c4da45858a4bea520d2);
+            
+        
+            
+            var popup_f97a6f543a424fdd93a27849c8475f51 = L.popup({maxWidth: '300'});
+
+            
+                var html_88c1e1fcb6ff46f782529a552e49fab7 = $('         <div id="html_88c1e1fcb6ff46f782529a552e49fab7"                 style="width: 100.0%; height: 100.0%;">                  Tsachi &amp; Adi</div>                 ')[0];
+                popup_f97a6f543a424fdd93a27849c8475f51.setContent(html_88c1e1fcb6ff46f782529a552e49fab7);
+            
+
+            marker_bdc1e8a134ef46f3989b1f9db873fb7e.bindPopup(popup_f97a6f543a424fdd93a27849c8475f51);
+
+            
+        
+        
+            
+            var feature_group_adf2837202ee49ab814ac20b7c8fac6c = L.featureGroup(
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+        
+        
+            
+
+            var marker_1f492170c4ec4c6493d31f85eb27cf81 = L.marker(
+                [32.072508,34.886817],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_adf2837202ee49ab814ac20b7c8fac6c);
+            
+        
+            
+
+                var icon_36e02a77abea4fe9abf2a717016f817f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f492170c4ec4c6493d31f85eb27cf81.setIcon(icon_36e02a77abea4fe9abf2a717016f817f);
+            
+        
+            
+            var popup_2b8f259c367345238735b48116c256e5 = L.popup({maxWidth: '300'});
+
+            
+                var html_3ebd5ef75dc04d2e87f61d43ab685702 = $('         <div id="html_3ebd5ef75dc04d2e87f61d43ab685702"                 style="width: 100.0%; height: 100.0%;">                  Smulik &amp; Hani</div>                 ')[0];
+                popup_2b8f259c367345238735b48116c256e5.setContent(html_3ebd5ef75dc04d2e87f61d43ab685702);
+            
+
+            marker_1f492170c4ec4c6493d31f85eb27cf81.bindPopup(popup_2b8f259c367345238735b48116c256e5);
+
+            
+        
+        
+            
+
+            var marker_d4578e96608c4e72a72af2cde9b45e44 = L.marker(
+                [32.158693,34.905439],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_adf2837202ee49ab814ac20b7c8fac6c);
+            
+        
+            
+
+                var icon_3c1df3d7df104207a9c8beac9b690aff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4578e96608c4e72a72af2cde9b45e44.setIcon(icon_3c1df3d7df104207a9c8beac9b690aff);
+            
+        
+            
+            var popup_dfa4c5bd74d54dd9b6d8a0a061491334 = L.popup({maxWidth: '300'});
+
+            
+                var html_65e4ee95d2e04d2ebc3b01e3d9ec516e = $('         <div id="html_65e4ee95d2e04d2ebc3b01e3d9ec516e"                 style="width: 100.0%; height: 100.0%;">                  Miri &amp; Shalom</div>                 ')[0];
+                popup_dfa4c5bd74d54dd9b6d8a0a061491334.setContent(html_65e4ee95d2e04d2ebc3b01e3d9ec516e);
+            
+
+            marker_d4578e96608c4e72a72af2cde9b45e44.bindPopup(popup_dfa4c5bd74d54dd9b6d8a0a061491334);
+
+            
+        
+        
+            
+
+            var marker_9e49482b898c4a92993526ed5ae7edba = L.marker(
+                [32.18422,34.869781],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_adf2837202ee49ab814ac20b7c8fac6c);
+            
+        
+            
+
+                var icon_e855fd482bcd4ce7bea67c76a9420916 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9e49482b898c4a92993526ed5ae7edba.setIcon(icon_e855fd482bcd4ce7bea67c76a9420916);
+            
+        
+            
+            var popup_eefcefe68f4c4498a69afbdbc49b95ee = L.popup({maxWidth: '300'});
+
+            
+                var html_a08d953769cc438796b965f9cc97a30a = $('         <div id="html_a08d953769cc438796b965f9cc97a30a"                 style="width: 100.0%; height: 100.0%;">                  Yona &amp; Tzvika</div>                 ')[0];
+                popup_eefcefe68f4c4498a69afbdbc49b95ee.setContent(html_a08d953769cc438796b965f9cc97a30a);
+            
+
+            marker_9e49482b898c4a92993526ed5ae7edba.bindPopup(popup_eefcefe68f4c4498a69afbdbc49b95ee);
+
+            
+        
+        
+            
+            var feature_group_59069cb9a1e24488b61a81980cf64972 = L.featureGroup(
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+        
+        
+            
+
+            var marker_3342fed64ab942d786fefbc39c63f8e0 = L.marker(
+                [32.17262,34.911344],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_7196eb4a21a64bcda774430b6a68f076 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3342fed64ab942d786fefbc39c63f8e0.setIcon(icon_7196eb4a21a64bcda774430b6a68f076);
+            
+        
+            
+            var popup_a9f75684be7742a5a3dce4a3889da6ec = L.popup({maxWidth: '300'});
+
+            
+                var html_dbb93e21f94d4f7ab15948dfdbd2e611 = $('         <div id="html_dbb93e21f94d4f7ab15948dfdbd2e611"                 style="width: 100.0%; height: 100.0%;">                  Neta &amp; Eyal</div>                 ')[0];
+                popup_a9f75684be7742a5a3dce4a3889da6ec.setContent(html_dbb93e21f94d4f7ab15948dfdbd2e611);
+            
+
+            marker_3342fed64ab942d786fefbc39c63f8e0.bindPopup(popup_a9f75684be7742a5a3dce4a3889da6ec);
+
+            
+        
+        
+            
+
+            var marker_2abae54b6eb34370b7312bab252e80d9 = L.marker(
+                [32.052105,34.780816],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_6eb9535fd2ff420d83e406ade71cee47 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2abae54b6eb34370b7312bab252e80d9.setIcon(icon_6eb9535fd2ff420d83e406ade71cee47);
+            
+        
+            
+            var popup_67720b423fde4536b4dc0d855e3bafc7 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc9308dc6e364eaba71272d9b356dac2 = $('         <div id="html_bc9308dc6e364eaba71272d9b356dac2"                 style="width: 100.0%; height: 100.0%;">                  Oran &amp; Ifaa</div>                 ')[0];
+                popup_67720b423fde4536b4dc0d855e3bafc7.setContent(html_bc9308dc6e364eaba71272d9b356dac2);
+            
+
+            marker_2abae54b6eb34370b7312bab252e80d9.bindPopup(popup_67720b423fde4536b4dc0d855e3bafc7);
+
+            
+        
+        
+            
+
+            var marker_fe6c46478364436191c0fd57bd891e86 = L.marker(
+                [32.179398,34.910095],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_c3764f762ee442b28196609c42f2680e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fe6c46478364436191c0fd57bd891e86.setIcon(icon_c3764f762ee442b28196609c42f2680e);
+            
+        
+            
+            var popup_6f563699b5cd40359072fffc927dcf42 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2f6b4caa57042a79310ff26dc4e447b = $('         <div id="html_f2f6b4caa57042a79310ff26dc4e447b"                 style="width: 100.0%; height: 100.0%;">                  Michal &amp; Dudi</div>                 ')[0];
+                popup_6f563699b5cd40359072fffc927dcf42.setContent(html_f2f6b4caa57042a79310ff26dc4e447b);
+            
+
+            marker_fe6c46478364436191c0fd57bd891e86.bindPopup(popup_6f563699b5cd40359072fffc927dcf42);
+
+            
+        
+        
+            
+
+            var marker_861d620015ef42aa8c3d97cc663736d5 = L.marker(
+                [32.18435,34.869781],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_69573bcb97e040c39a0314a496dd094e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_861d620015ef42aa8c3d97cc663736d5.setIcon(icon_69573bcb97e040c39a0314a496dd094e);
+            
+        
+            
+            var popup_62d9b41d8d6c414ca1b4b59a1d61abbc = L.popup({maxWidth: '300'});
+
+            
+                var html_5d3c46df51184f21be9b3ecd252e1ca6 = $('         <div id="html_5d3c46df51184f21be9b3ecd252e1ca6"                 style="width: 100.0%; height: 100.0%;">                  Dotan &amp; Shiranm</div>                 ')[0];
+                popup_62d9b41d8d6c414ca1b4b59a1d61abbc.setContent(html_5d3c46df51184f21be9b3ecd252e1ca6);
+            
+
+            marker_861d620015ef42aa8c3d97cc663736d5.bindPopup(popup_62d9b41d8d6c414ca1b4b59a1d61abbc);
+
+            
+        
+        
+            
+
+            var marker_db7b77e0ff334606b9ea732e5d81b023 = L.marker(
+                [32.158693,34.905439],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_450272a63130401fb088b0fd4e023213 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db7b77e0ff334606b9ea732e5d81b023.setIcon(icon_450272a63130401fb088b0fd4e023213);
+            
+        
+            
+            var popup_a9f9b2b697364bbcac94228f686bd18a = L.popup({maxWidth: '300'});
+
+            
+                var html_3233432a34a5476d82f6d924925ebcb8 = $('         <div id="html_3233432a34a5476d82f6d924925ebcb8"                 style="width: 100.0%; height: 100.0%;">                  Idam &amp; Naomi</div>                 ')[0];
+                popup_a9f9b2b697364bbcac94228f686bd18a.setContent(html_3233432a34a5476d82f6d924925ebcb8);
+            
+
+            marker_db7b77e0ff334606b9ea732e5d81b023.bindPopup(popup_a9f9b2b697364bbcac94228f686bd18a);
+
+            
+        
+        
+            
+
+            var marker_0b5b7383368f4bf5abe371c355fe60f2 = L.marker(
+                [32.17659,35.015884],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_59069cb9a1e24488b61a81980cf64972);
+            
+        
+            
+
+                var icon_74e67c579b3e42f5ba8af7cf5efd93b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'black',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b5b7383368f4bf5abe371c355fe60f2.setIcon(icon_74e67c579b3e42f5ba8af7cf5efd93b8);
+            
+        
+            
+            var popup_9e6554af122146d3ac335b355129ff8a = L.popup({maxWidth: '300'});
+
+            
+                var html_9f451d31c43b4c6fb9b499b16c79141b = $('         <div id="html_9f451d31c43b4c6fb9b499b16c79141b"                 style="width: 100.0%; height: 100.0%;">                  Ravit &amp; Yoav</div>                 ')[0];
+                popup_9e6554af122146d3ac335b355129ff8a.setContent(html_9f451d31c43b4c6fb9b499b16c79141b);
+            
+
+            marker_0b5b7383368f4bf5abe371c355fe60f2.bindPopup(popup_9e6554af122146d3ac335b355129ff8a);
+
+            
+        
+        
+            
+            var layer_control_0be20c8059a448f6b9d8bcb8c99931a4 = {
+                base_layers : { "openstreetmap" : tile_layer_9d8352f03ae84087be31db2cc3b718d9, },
+                overlays : { "parents" : feature_group_1a81f0d4401a47849441222ea82fa3db,"siblings" : feature_group_5ba0089069a04c92b20707fb4b12aa5f,"uncles" : feature_group_adf2837202ee49ab814ac20b7c8fac6c,"nephews" : feature_group_59069cb9a1e24488b61a81980cf64972, }
+                };
+            L.control.layers(
+                layer_control_0be20c8059a448f6b9d8bcb8c99931a4.base_layers,
+                layer_control_0be20c8059a448f6b9d8bcb8c99931a4.overlays
+                ).addTo(map_45642942d67c49d6915db1abaa071aff);
+        
+        
+        
+        </script>
+        

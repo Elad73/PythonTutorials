@@ -1,0 +1,20 @@
+0, 0, Home, Kdoshei ha-Sho'a 26, Tel Aviv-Yafo, Israel, 32.128302, 34.792693
+1, 1, Savata Ita, Gilad 33, Nirit, Israel, 32.146087, 34.983676
+1, 1, Saba Yehuda & Nurit, Ha-Oren 52, Ramat Yshai, Israel, 32.703002, 35.164252
+1, 2, Saba Ezra, Giv'ati 56, Ashkelon, Israel, 31.679973, 34.563714
+1, 2, Savta Geula, Israel Galili 14, Tel Aviv-Yafo, Israel, 32.101892, 34.784878
+2, 1, Askal & Ayelet, Gilad 33, Nirit, Israel, 32.146190, 34.983676
+2, 1, Orki & Shannon, Ha-Nevi'im 6, Tel Aviv-Yafo, Israel, 32.076086, 34.777575
+2, 2, Ravit & Itai, Adirim 29, Tel Aviv-Yafo, Israel, 32.123077, 34.840857
+2, 2, Lilach & Amit, Tel Nof Camp, Tel Nof Camp, Israel, 31.822281, 34.819500
+2, 2, Eli & Gili, Mordekhai Elkakhi 1, Tel Aviv-Yafo, Israel, 32.126843, 34.808347
+2, 2, Tsachi & Adi, Elazar HaHorani 10, Tel Aviv-Yafo, Israel, 32.093331, 34.786979
+3, 1, Smulik & Hani, Yitskhak Ben Tsvi 18, Petah Tikva, Israel, 32.072508, 34.886817
+3, 1, Miri & Shalom, Eshkol 38, Hod Hasharon, Israel, 32.158693, 34.905439
+3, 1, Yona & Tzvika, Har Sinai St 25, Ra'anana, Israel, 32.184220, 34.869781
+4, 1, Neta & Eyal, Gilboa St 5, Kefar Sava, Israel, 32.172620, 34.911344
+4, 1, Oran & Ifaa, Turei Zahav St 17, Tel Aviv-Yafo, Israel, 32.052105, 34.780816
+4, 1, Michal & Dudi, Avivim St 12, Kefar Sava, Israel, 32.179398, 34.910095
+4, 1, Dotan & Shiranm, Har Sinai St 25, Ra'anana, Israel, 32.184350, 34.869781
+4, 1, Idam & Naomi, Eshkol St 38, Hod Hasharon, Israel, 32.158693, 34.905439
+4, 1, Ravit & Yoav, 31 Sorek St, Alfei Menashe, Israel, 32.176590, 35.015884
